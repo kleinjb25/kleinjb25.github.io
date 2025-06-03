@@ -20,18 +20,18 @@ nav {
   justify-content: space-between;
   align-items: center;
 }
-.nav-links {
+.navLinks {
   list-style: none;
   display: flex;
   gap: 1.5rem;
 }
 
-.nav-links a {
+.navLinks a {
   color: #9d9d9d;
   transition: color 0.3s ease;
 }
 
-.nav-links a:hover {
+.navLinks a:hover {
   color: #0059b3;
 }
 
