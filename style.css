@@ -1,12 +1,10 @@
-
+/* general styling for all pages*/
 body {
     background-color: #242424;
     color: #dddddd;
     margin: 0;
-    line-height: 1.6;
     scroll-behavior: smooth;
 }
-
 header {
     background: #2e4169;
     padding: 1rem 2rem;
@@ -14,7 +12,6 @@ header {
     top: 0;
     z-index: 1000;
 }
-
 nav {
     display: flex;
     justify-content: space-between;
@@ -25,26 +22,18 @@ nav {
     display: flex;
     gap: 1.5rem;
 }
-
 .navLinks a {
     color: #9d9d9d;
     transition: color 0.3s ease;
 }
-
 .navLinks a:hover {
     color: #0059b3;
 }
-
-#headshot {
-    border-radius: 50%;
-}
-
 section {
     padding: 3rem 2rem;
     max-width: 1000px;
     margin: auto;
 }
-
 footer {
     text-align: center;
     padding: 1rem;
@@ -53,19 +42,23 @@ footer {
     color: #aaa;
 }
 
+/* home page */
+#headshot {
+    border-radius: 50%;
+}
+
+/* projects page */
 .tabsContainer {
     background-color: #0D1117;
     color: #C9D1D9;
     padding: 2rem;
     border-radius: 12px;
 }
-
 .tabsHeader {
     display: flex;
     gap: 1rem;
     margin-bottom: 1rem;
 }
-
 .tabButton {
     padding: 0.7rem 1.2rem;
     background-color: #21262D;
@@ -76,25 +69,9 @@ footer {
     color: #C9D1D9;
     transition: background-color 0.3s;
 }
-
-
 .projContent {
     padding: 1.5rem;
     background-color: #161B22;
     border-radius: 0 0 12px 12px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.6);
-}
-
-.tag {
-    background-color: #238636;
-    color: white;
-    padding: 0.4rem 0.8rem;
-    border-radius: 999px;
-    font-size: 0.85rem;
-    text-decoration: none;
-    transition: background-color 0.3s;
-}
-
-.tag:hover {
-    background-color: #2EA043;
 }
