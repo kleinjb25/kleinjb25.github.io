@@ -4,3 +4,11 @@ document.getElementById("contactForm").addEventListener("submit", function(e) {
     .then(() => alert("Message sent!"))
     .catch(error => alert("Failed to send message: " + error));
 });
+function showTab(tabNum) {
+    document.getElementById("proj1").style.display = "none";
+    document.getElementById("proj2").style.display = "none";
+    document.getElementById("proj3").style.display = "none";
+    document.getElementById("proj4").style.display = "none";
+
+    document.getElementById("proj" + tabNum).style.display = "block";
+  }
