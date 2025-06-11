@@ -18,6 +18,7 @@ nav {
     align-items: center;
 }
 .navLinks {
+    font-family: 'Open Sans', sans-serif;
     list-style: none;
     display: flex;
     gap: 1.5rem;
@@ -168,4 +169,13 @@ p, button {
 }
 .sendForm button:hover {
     background-color: #1926b8;
+}
+.cLinks {
+  margin-right: 20px;
+  color: #dddddd;
+  transition: color 0.2s ease;
+}
+
+.cLinks:hover {
+  color: #1f6feb;
 }
