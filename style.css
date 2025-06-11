@@ -30,8 +30,7 @@ nav {
     color: #0059b3;
 }
 section {
-    padding: 3rem 2rem;
-    max-width: 1000px;
+    padding: 5% 10%;
     margin: auto;
 }
 footer {
@@ -41,7 +40,7 @@ footer {
     font-size: 0.9rem;
     color: #aaaaaa;
 }
-h1 {
+h1, h2 {
     font-family: 'Poppins', serif;
 }
 p, button {
@@ -51,24 +50,50 @@ p, button {
 /* home page */
 #headshot {
     border-radius: 50%;
-    width: 30%;
-    height: 30%;
+    width: 200px;
+    height: 200px;
+    margin: 10px 0;
 }
 #name {
     font-size: 69px;
     margin: 0px;
 }
+#subtitle {
+    font-size: 24px;
+    color: #999999;
+    margin-top: 10px;
+    font-weight: normal;
+}
 .cta {
+    margin-right: 1%;
+    padding: 10px;
     border-radius: 12px;
     height: 69px;
     background-color: #1f16a6;
     color: #dddddd;
     border: none;
+    text-decoration: none;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 .cta:hover {
     background-color: #1926b8;
+}
+
+/*about page */
+.about {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    line-height: 1.6;
+    font-size: 18px;
+}
+.about h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+.about p {
+    margin-bottom: 20px;
 }
 
 /* projects page */
