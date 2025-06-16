@@ -96,6 +96,27 @@ p, button {
 .about p {
     margin-bottom: 20px;
 }
+.aboutGDCHYPE {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+.aboutGDCHYPE.reverse {
+    flex-direction: row-reverse;
+}
+.aboutGDCHYPE img {
+    flex: 1 1 300px;
+    max-width: 400px;
+    border-radius: 12px;
+    height: auto;
+}
+.aboutGDCHYPE .text {
+    flex: 2;
+    min-width: 280px;
+}
 
 /* projects page */
 .tabsContainer {
