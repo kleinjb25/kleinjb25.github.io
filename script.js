@@ -12,8 +12,6 @@ function showTab(tabNum) {
     document.getElementById("proj2").style.display = "none";
     document.getElementById("proj3").style.display = "none";
     document.getElementById("proj4").style.display = "none";
-
-    // Remove 'active' class from all buttons
     const buttons = document.querySelectorAll(".tabButton");
     buttons.forEach(btn => btn.classList.remove("active"));
     document.getElementById("proj" + tabNum).style.display = "block";
