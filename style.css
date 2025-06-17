@@ -19,7 +19,7 @@ main {
   flex: 1;
 }
 header {
-    background-color: rgba(14, 18, 24, 0.96);
+    background-color: #0e1218ee;
     padding: .5% 1.5%;
     position: sticky;
     top: 0;
@@ -48,7 +48,7 @@ section {
     margin: auto;
 }
 footer {
-    background-color: rgba(14, 18, 24, 0.96);
+    background-color: #0e1218ee;
     text-align: center;
     padding: .5%;
     font-size: 14px;
@@ -62,6 +62,11 @@ p, button {
 }
 
 /* home page */
+.home {
+    max-width: 800px;
+    background-color: #0d1117bb;
+    border-radius: 12px;
+}
 #headshot {
     border-radius: 50%;
     width: 200px;
@@ -96,11 +101,14 @@ p, button {
 
 /*about page */
 .about {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 40px 20px;
+    max-width: 1000px;
     line-height: 1.6;
     font-size: 18px;
+}
+.aboutContainer {
+    background-color: #0d1117bb;
+    border-radius: 12px;
+    padding: 3%;
 }
 .about h1 {
     font-size: 48px;
@@ -133,7 +141,7 @@ p, button {
 
 /* projects page */
 .tabsContainer {
-    background-color: #0d1117;
+    background-color: #0d1117bb;
     color: #dddddd;
     padding: 2%;
     border-radius: 12px;
@@ -164,7 +172,7 @@ p, button {
     flex-wrap: wrap;
     gap: 20px;
     padding: 1%;
-    background-color: #0d1117;
+    background-color: #0d1117bb;
     color: #dddddd;
 }
 .myInfo {
@@ -189,6 +197,7 @@ p, button {
     padding: 3%;
     color: #dddddd;
     border-radius: 6px;
+    font-family: 'Open Sans', sans-serif;
 }
 .sendForm button {
     background-color: #1f16a6;
@@ -207,7 +216,6 @@ p, button {
   color: #dddddd;
   transition: color 0.2s ease;
 }
-
 .cLinks:hover {
   color: #1f6feb;
 }
