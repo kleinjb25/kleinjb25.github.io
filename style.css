@@ -160,6 +160,12 @@ p, button {
     color: #dddddd;
     transition: background-color 0.3s;
 }
+.tabButton:hover {
+    background-color: #30363d;
+}
+.tabButton.active {
+    background-color: #1f6feb;
+}
 .projContent {
     padding: 4%;
     background-color: #161b22;
