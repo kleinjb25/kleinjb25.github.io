@@ -169,6 +169,12 @@ a {
     /*unround the right corner if too many tabs */
     border-radius: 0 12px 12px 12px;
 }
+.imgRow {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 69px;
+    margin: 25px 0;
+}
 
 /* resume page */
 .resumeContent {
