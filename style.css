@@ -9,6 +9,11 @@ body {
     margin: 0;
     scroll-behavior: smooth;
 }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 html, body {
   height: 100%;
   margin: 0;
@@ -23,6 +28,7 @@ header {
     padding: .5% 1.5%;
     top: 0;
     z-index: 1000;
+    width: 100%;
 }
 nav {
     display: flex;
@@ -43,8 +49,29 @@ nav {
     color: #0059b3;
 }
 section {
+  padding: 5% 5%;
+  max-width: 100%;
+}
+@media (min-width: 768px) {
+  section {
     padding: 5% 10%;
-    margin: auto;
+  }
+}
+@media (max-width: 424px) {
+  .headerSub {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navLinks {
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+  }
+
+  .aboutContainer {
+    padding: 5%;
+  }
 }
 footer {
     background-color: #0e1218ee;
@@ -52,6 +79,7 @@ footer {
     padding: .5%;
     font-size: 14px;
     color: #aaaaaa;
+    width: 100%;
 }
 h1, h2 {
     font-family: 'Poppins', serif;
@@ -88,6 +116,7 @@ a {
     background-color: #0d1117bb;
     border-radius: 12px;
     padding: 3%;
+    max-width: 100%;
 }
 .headerSub {
     display: flex;
@@ -127,7 +156,7 @@ a {
 }
 .aboutGDCHYPE img {
     flex: 1 1 300px;
-    max-width: 400px;
+    max-width: 100%;
     border-radius: 12px;
     height: auto;
 }
@@ -135,7 +164,6 @@ a {
     flex: 2;
     min-width: 280px;
 }
-
 /* projects page */
 .tabsContainer {
     background-color: #0d1117bb;
@@ -146,6 +174,7 @@ a {
 .tabsHeader {
     display: flex;
     gap: 10px;
+    flex-wrap: wrap;
 }
 .tabButton {
     padding: 1% 2%;
