@@ -25,13 +25,15 @@ main {
 }
 header {
     background-color: #0e1218ee;
-    padding: .5% 1.5%;
     top: 0;
     z-index: 1000;
     width: 100%;
+    position: fixed;
+    backdrop-filter: blur(8px);
 }
 nav {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
@@ -44,12 +46,15 @@ nav {
 .navLinks a {
     color: #9d9d9d;
     transition: color 0.3s ease;
+    word-break: normal;
+    overflow-wrap: break-word;
+    white-space: normal;
 }
 .navLinks a:hover {
     color: #0059b3;
 }
 section {
-  padding: 5% 5%;
+  padding-top: 170px;
   max-width: 100%;
 }
 @media (min-width: 768px) {
@@ -89,6 +94,8 @@ p, button {
 }
 a {
     color: #1f6feb;
+    word-break: break-word;
+    overflow-wrap: anywhere;
 }
 
 /*index page */
@@ -108,15 +115,15 @@ a {
     font-weight: normal;
 }
 .about {
-    max-width: 1000px;
+    max-width: 1440px;
     line-height: 1.6;
     font-size: 18px;
+    margin: 0 auto;
 }
 .aboutContainer {
     background-color: #0d1117bb;
     border-radius: 12px;
     padding: 3%;
-    max-width: 100%;
 }
 .headerSub {
     display: flex;
@@ -165,6 +172,17 @@ a {
     min-width: 280px;
 }
 /* projects page */
+.imgRow img {
+  width: 48%;
+}
+@media (max-width: 1485px) {
+  .imgRow img {
+    width: 100%;
+  }
+  .imgRow {
+    gap: 20px;
+  }
+}
 .tabsContainer {
     background-color: #0d1117bb;
     color: #dddddd;
@@ -201,7 +219,7 @@ a {
 .imgRow {
     display: flex;
     flex-wrap: wrap; 
-    gap: 69px;
+    gap: 42px;
     margin: 25px 0;
 }
 
