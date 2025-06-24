@@ -46,8 +46,8 @@
                             After extensive debugging and research, I found out this was because the Node.js backend was trying to connect to the MySQL container using "localhost", which refers to the Node container itself, and not the actual MySQL container.
                             Updating the host to "mysql" (the name of the MySQL service in Docker Compose) resolved the issue by correctly routing the connection to the database within the Docker network. It was a tricky issue to identify, as the error message didn't clearly indicate the root cause.
                             Our team collaborated using GroupMe for communication, GitLab to track issues and manage development tasks, and Zoom meetings to debug any major problems. We also met biweekly with our client and class instructor to gather feedback and stay aligned with Agile methodology.</p>
-                        <img src="coderedhawkposter.png" style="width: 100%;" title="The poster that was presented at the Senior Design Expo in May 2025." alt="Senior Design Poster"></img>
                         <p> This project is intended to run locally or in a controlled environment. A public demo is not currently available but is planned once hosting infrastructure is in place.</p>
+                        <img src="coderedhawkposter.png" style="width: 100%;" title="The poster that was presented at the Senior Design Expo in May 2025." alt="Senior Design Poster"></img>
                     </div>
 
                     <div id="proj2" class="projContent" style="display: none;">
@@ -83,10 +83,15 @@
                     <div id="proj4" class="projContent" style="display: none;">
                         <h2>MiamiInsider</h2>
                         <p>A website for Miami University students to leave reviews on businesses. In this site, users can view information about locations in Oxford, Ohio, such as contact information and description. 
-                            They can also create an account if they have a Miami University affiliated account and leave reviews on locations to better guide others. MiamiInsider was made in HTML, CSS, SQLite, and Flask. 
+                            They can also create an account if they have a Miami University affiliated account and leave reviews on locations to better guide others. MiamiInsider was made in HTML, CSS, Bootstrap, jQuery, SQLite, and Flask. 
                             I helped design the layout and color scheme of the page, enabled the functionality for the user to make their profile private or public, and added the pre-existing locations and users with sample reviews to the database.</p>
-                        <img src="miamiinsiderhome.png" style="object-fit: cover; width: 100%;" title="An image of MiamiInsider's UI. There is a search bar, ability to login / make an account, and pick locations to read reviews on." alt="Image of MiamiInsider's UI"></img>
+                        <p>
+                            This was my first time using Bootstrap, so one of the challenges I had with this project was figuring out that to change the style of something, there was a specific class for it.
+                            For example, the class "px-3" would be used to change the padding only on the x axis (left and right of the element) by 16 pixels (1rem). I had to do research and manually experiment with possible values for certain properties to make sure the website looked presentable.
+                            I communicated with my team members over Discord, in-class, and set up meetings for when we met a milestone.'
+                            The project implemented Waterfall methodology by using GitHub with branches for each requirement and mostly conducting meetings when a milestone was completed. </p>
                         <p>Link: <a href="https://miamiinsider.onrender.com/" target="_blank">https://miamiinsider.onrender.com/</a></p>
+                        <img src="miamiinsiderhome.png" style="object-fit: cover; width: 100%;" title="An image of MiamiInsider's UI. There is a search bar, ability to login / make an account, and pick locations to read reviews on." alt="Image of MiamiInsider's UI"></img>
                     </div>
                 </div>
                 
