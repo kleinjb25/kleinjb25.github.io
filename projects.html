@@ -38,15 +38,15 @@
 
                      <div id="proj1" class="projContent" style="display: block;">
                         <h2>Code Redhawk</h2>
-                        <p>Code Redhawk is a full-stack web application enabling instructors to create coding problems and problem sets, and students to submit solutions with immediate feedback.
+                        <p>Code Redhawk is a <b>full-stack web application</b> enabling instructors to create coding problems and problem sets, and students to submit solutions with immediate feedback.
                             The platform streamlines administrative tasks and integrates AI for content generation, fostering an engaging learning environment.
-                            I helped set up the backend by establishing a TCP connection to a MySQL database and building an HTTP server using Node.js.
-                            I also designed the database schema and containerized the entire backend — including MySQL, Flask, and Node.js — using Docker.
+                            <b>I helped set up the backend by establishing a TCP connection to a MySQL database and building an HTTP server using Node.js.
+                            I also designed the database schema and containerized the entire backend — including MySQL, Flask, and Node.js — using Docker.</b>
                             This allows the application to run consistently on any device and enables devices on the network to connect to the HTTP server.</p>
                         <p>During development, I ran into an error: "Error connecting to MySQL: Error: connect ECONNREFUSED 255.255.0.0:3306" (fake IP address used for privacy). 
                             After extensive debugging and research, I found out this was because the Node.js backend was trying to connect to the MySQL container using "localhost", which refers to the Node container itself, and not the actual MySQL container.
-                            Updating the host to "mysql" (the name of the MySQL service in Docker Compose) resolved the issue by correctly routing the connection to the database within the Docker network. It was a tricky issue to identify, as the error message didn't clearly indicate the root cause.
-                            Our team collaborated using GroupMe for communication, GitLab to track issues and manage development tasks, and Zoom meetings to debug any major problems. We also met biweekly with our client and class instructor to gather feedback and stay aligned with Agile methodology.</p>
+                            Updating the host to "mysql" (the name of the MySQL service in Docker Compose) resolved the issue by correctly routing the connection to the database within the Docker network. It was a tricky issue to identify, as <b>the error message didn't clearly indicate the root cause.</b>
+                            Our team collaborated using <b>GroupMe for communication, GitLab to track issues and manage development tasks, and Zoom meetings to debug any major problems.</b> We also met biweekly with our client and class instructor to <b>gather feedback and stay aligned with Agile methodology.</b></p>
                         <p> This project is intended to run locally or in a controlled environment. A public demo is not currently available but is planned once hosting infrastructure is in place.</p>
                         <img src="coderedhawkposter.png" style="width: 100%;" title="The poster that was presented at the Senior Design Expo in May 2025." alt="Senior Design Poster"></img>
                     </div>
@@ -54,28 +54,28 @@
                     <div id="proj2" class="projContent" style="display: none;">
                         <h2>Bell Bot</h2>
                         <p>Bell Bot is one of the games I helped develop through Game Design Club, created over the span of four months primarily during club meetings.
-                            I served as the project lead, where I proposed the original concept: "What if we made an open-world game where you control a Starship robot on Miami's campus?"
-                            The idea sparked interest, and I assembled a team of 15 club members to bring it to life.
-                            As the lead, I was responsible for programming core gameplay logic - such as player movement, death conditions, and the system for completing or failing delivery orders - as well as designing levels and integrating assets into the game. </p>
+                            I served as the<b>project lead</b>, where I proposed the original concept: "What if we made an open-world game where you control a Starship robot on Miami's campus?"
+                            The idea sparked interest, and <b>I assembled a team of 15 club members</b> to bring it to life.
+                            As the lead, I was responsible for <b>programming core gameplay logic</b> - such as player movement, death conditions, and the system for completing or failing delivery orders - as well as designing levels and integrating assets into the game. </p>
                         <div class="imgRow">
                             <img src="bellbotpic.jpg" title="An in-engine screenshot of a 3D model of Bell Tower, trees, and a realistic-looking sky rendered in Unreal Engine 5." alt="Bell Bot in-engine screenshot"></img>
                             <img src="bellbotui.jpg" title="An in-game screenshot of the player controlling the robot in the third person perspective, with the UI of the game overlayed on top." alt="Screenshot of the player's view when playing Bell Bot"></img>
                         </div>
-                        <p>I coordinated tasks with team members who handled UI, AI behavior, 3D modeling, music composition, and narrative design. I communicated with the team primarily through Discord and weekly club meetings to track progress.
-                            One technical challenge I encountered was recurring asset loss and version control errors when pulling from Git. After some investigation, I found out that team members were using different versions of Unreal Engine 5.
-                            Once I had everyone upgrade to the latest version of Unreal Engine, the issue was resolved and collaboration became much smoother.
-                            The game was built using Blueprints and is currently available for free on Steam.</p>
+                        <p>I coordinated tasks with team members who handled UI, AI behavior, 3D modeling, music composition, and narrative design. I communicated with the team primarily through <b>Discord and weekly club meetings</b> to track progress.
+                            One technical challenge I encountered was recurring <b>asset loss and version control errors</b> when pulling from Git. After some investigation, I found out that team members were using different versions of Unreal Engine 5.
+                            Once I had everyone upgrade to the latest version of Unreal Engine, the issue was resolved, and collaboration became much smoother.
+                            The game was <b>built using Blueprints and is currently available for free on Steam.</b></p>
                         <p>Steam Link: <a href="https://store.steampowered.com/app/3520260/Bell_Bot/" target="_blank">https://store.steampowered.com/app/3520260/Bell_Bot/</a></p>
                     </div>
 
                     <div id="proj3" class="projContent" style="display: none;">
                         <h2>ASL Detection using Machine Learning</h2>
-                        <p>For our semester-long project in Machine Learning, I co-authored a paper analyzing the effectiveness of a Convolutional Neural Network (CNN) with K-Fold Cross Validation on a dataset of images depicting American Sign Language (ASL) hand symbols.
+                        <p>For our semester-long project in Machine Learning, I co-authored a paper analyzing the effectiveness of a <b>Convolutional Neural Network (CNN) with K-Fold Cross Validation</b> on a dataset of images depicting American Sign Language (ASL) hand symbols.
                             Each group was allowed to choose from a variety of techniques and select a dataset to apply them. We chose to explore CNNs with an ASL dataset from Kaggle.
-                            I focused on running and adjusting the Python code, implementing multiprocessing for performance, and generating visualizations to support our findings. I also wrote the analysis section of the paper, focusing on interpreting the model's results.</p>
-                        <p>Early in testing, I noticed that the model reported 100% accuracy on the testing set. After investigating, I discovered that the model was mistakenly tested using a placeholder test set with only one image per class.
+                            I focused on <b>running and adjusting the Python code, implementing multiprocessing for performance, and generating visualizations to support our findings.</b> I also wrote the analysis section of the paper, focusing on interpreting the model's results.</p>
+                        <p>Early in testing, I noticed that the model reported 100% accuracy on the testing set. After investigating, <b>I discovered that the model was mistakenly tested using a placeholder test set</b> with only one image per class.
                             A teammate found a more robust test set containing 870 images, and I updated the code to import and evaluate against it. This change revealed a more realistic test accuracy of around 37%, giving us meaningful insights to analyze in our paper.
-                            I helped schedule weekly meetings with our team to talk about our progress, communicating over text message. We collaborated on the Python program using Visual Studio Code's Live Share feature.  </p>
+                            I helped schedule weekly meetings with our team to talk about our progress, communicating over text message. We <b>collaborated on the Python program using Visual Studio Code's Live Share feature.</b></p>
                         <div style="margin: 2% 0 2%;">
                             <a href="cse432finalsamandrewjustin.pdf" download="MachineLearningProject.pdf" class="download-button" target="_blank">Download PDF</a>
                         </div>
@@ -84,12 +84,12 @@
 
                     <div id="proj4" class="projContent" style="display: none;">
                         <h2>Analysis of Two-Sample t-Test Timings in Python, R, and SAS</h2>
-                        <p> During my Statistical Programming course, I was assigned a personalized project involving the use of SAS macros to generate n*m pairs of data and perform m two-sample t-tests.
-                            Given my interest in comparing programming languages, I also implemented the task in R and Python to compare runtimes. </p>
-                        <p>When I was working on the project, I saw that after I had written all three programs, SAS was performing hundreds of times slower than the R and Python programs.
-                            I found out this was because an entirely new dataset for each pair of data points that were generated was being created - the reduced performance was due to the overhead of repeatedly initializing and storing datasets in memory.
-                            Once I made all of the generated pairs get added to only one dataset, the SAS program ran faster than the R and Python programs.</p> 
-                        <p>Even though the professor gave a 100% on the project grade, he did comment that each program could be optimized to run even faster. Because the project was completed in just eight weeks, I noted in the paper that there are additional metrics worth measuring and several ways to improve runtime.
+                        <p> During my Statistical Programming course, I was assigned a personalized project involving the use of <b>SAS macros to generate n*m pairs of data and perform m two-sample t-tests.</b>
+                            Given my interest in comparing programming languages, I also <b>implemented the task in R and Python</b> to compare runtimes. </p>
+                        <p>When I was working on the project, I saw that after I had written all three programs, <b>SAS was performing hundreds of times slower than the R and Python programs.</b>
+                            I found out this was because <b>an entirely new dataset for each pair of data points that were generated was being created by the macro</b> - the reduced performance was due to the overhead of repeatedly initializing and storing datasets in memory.
+                            Once I made the macro utilize <b>only one dataset,</b> the SAS program ran faster than the R and Python programs.</p> 
+                        <p>Even though the professor gave a 100% on the project grade, he did comment that <b>each program could be optimized to run even faster.</b> Because the project was completed in just eight weeks, I noted in the paper that there are additional metrics worth measuring and several ways to improve runtime.
                             This leaves room for further analysis and optimization beyond the project's original scope. </p>
                         <div style="margin: 2% 0 2%;">
                             <a href="sta402finalproject.pdf" download="TTestAnalysisProject.pdf" class="download-button" target="_blank">Download PDF</a>
@@ -99,14 +99,14 @@
                     
                     <div id="proj5" class="projContent" style="display: none;">
                         <h2>MiamiInsider</h2>
-                        <p>A website for Miami University students to leave reviews on businesses. In this site, users can view information about locations in Oxford, Ohio, such as contact information and description. 
-                            They can also create an account if they have a Miami University affiliated account and leave reviews on locations to better guide others. MiamiInsider was made in HTML, CSS, Bootstrap, jQuery, SQLite, and Flask. 
+                        <p>A website <b>for Miami University students to leave reviews on local businesses</b>. In this site, users can view information about locations in Oxford, Ohio, such as contact information and description. 
+                            They can also create an account if they have a Miami University affiliated account and leave reviews on locations to better guide others. MiamiInsider was made in <b>HTML, CSS, Bootstrap, jQuery, SQLite, and Flask.</b>
                             I helped design the layout and color scheme of the page, enabled the functionality for the user to make their profile private or public, and added the pre-existing locations and users with sample reviews to the database.</p>
                         <p>
-                            This was my first time using Bootstrap, so one of the challenges I had with this project was figuring out that to change the style of something, there was a specific class for it.
+                            This was my first time using Bootstrap, so one of the challenges I had with this project was figuring out that <b>to change the style of something, there was a specific class for it.</b>
                             For example, the class "px-3" would be used to change the padding only on the x axis (to the left and right of the element) by 16 pixels (1rem). I had to do research and manually experiment with possible values for certain properties to make sure the website looked presentable.
-                            I communicated with my team members over Discord, in-class, and set up meetings for when we met a milestone.
-                            The project implemented Waterfall methodology by using GitHub with branches for each requirement and mostly conducting meetings when a milestone was completed. </p>
+                            I communicated with my team members over Discord, in-class, and helped set up meetings for when we met a milestone.
+                            The project <b>implemented Waterfall methodology by using GitHub with branches for each requirement</b> and mostly conducting meetings when a milestone was completed. </p>
                         <p>Link: <a href="https://miamiinsider.onrender.com/" target="_blank">https://miamiinsider.onrender.com/</a></p>
                         <img src="miamiinsiderhome.png" style="object-fit: cover; width: 100%;" title="An image of MiamiInsider's UI. There is a search bar, ability to login / make an account, and pick locations to read reviews on." alt="Image of MiamiInsider's UI"></img>
                     </div>
